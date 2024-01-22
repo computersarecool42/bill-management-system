@@ -27,9 +27,6 @@ python main.py
 
 Follow the on-screen prompts to add entries, apply discounts, and view the bill.
 
-## Contributing
-Contributions to improve the Bill Management System are welcome. Please fork the repository and submit a pull request with your changes.
-
 ## License
 Distributed under the MIT License. See `LICENSE` for more information.
 
