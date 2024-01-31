@@ -10,6 +10,8 @@ Functions:
     ask_for_discount(): Asks the user for a discount percentage. Returns the discount as an integer if a valid input is provided, otherwise None.
     ask_for_filename(): Asks the user for a filename. Returns the filename as a string.
 """
+
+
 def ask_for_meal():
     name = input("Provide meal name: ")
     price = input("Provide meal price: ")
