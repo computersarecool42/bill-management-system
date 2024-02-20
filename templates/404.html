@@ -1,0 +1,6 @@
+{% extends "layout.html" %}
+{% block content %}
+    {{ message }}
+    <br>
+    <img width="200" src="{{ url_for('static', filename='error.gif') }}"  alt="bu"/>
+{% endblock %}

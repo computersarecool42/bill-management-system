@@ -10,3 +10,11 @@ class Meal(Entry):
     """
     def __init__(self, name, price):
         super().__init__(name, price)
+
+    # Converts a dictionary to a class instance, mapping keys to attributes and values accordingly.
+    @classmethod
+    def fromdict(self, dictionary):
+        returnObject = Meal(None, None)
+        for k, v in dictionary.items():
+            setattr(returnObject, k, v)
+        return returnObject

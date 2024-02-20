@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1>Check Discount</h1>
+The overall sum: {{ calculation_result }}
+<form method="POST" action="{{url_for('logic_routes.check')}}">
+    <label for="discount">Discount:</label>
+    <input type="number" id="discount" name="discount" required>
+    <button type="submit">Check Discount</button>
+</form>
+{% endblock %}

@@ -21,7 +21,9 @@ class Bill:
         add_drink(name, price): Adds a drink entry to the bill.
         add_services(name, price, guest_number): Adds a service entry to the bill.
     """
+
     def __init__(self):
+        # Using __ make it private, so only methods inside this class can have access to it
         self.__entries = []
         self.__log = []
 
@@ -58,18 +60,24 @@ class Bill:
         service = Service(name, price, guest_number)
         self.__entries.append(service)
 
+    # Setters
     # Read
     @property
     def entries(self):
-        return self.__entries
+        # Session can not store complex type of objects
+        # and self.__entries has objects that inherited after classes meal or entries
+        # So I need to convert elements from self.__entries to for example dictionary
+        # What to do: Convert complex objects in self.__entries to dictionaries for session storage compatibility.
+        return [element.__dict__ for element in self.__entries]
 
     # Write
     @entries.setter
     def entries(self, entries):
         if not entries:
             print("Entries can't be empty")
+            return
         else:
-            self.__entries = entries
+            self.__entries = [Meal.fromdict(entry) for entry in entries]
 
     # Write
     @property
@@ -81,5 +89,6 @@ class Bill:
     def log(self, log_entry):
         if not isinstance(log_entry, str):
             print("Log entry must be a string")
+            return
         else:
             self.__log.append(log_entry)

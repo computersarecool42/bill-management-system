@@ -1,0 +1,16 @@
+/* A common styles and the color variables for the light and dark themes */
+
+:root {
+    --main-bg-color: white;
+    --main-txt-color: black;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    color: var(--main-txt-color);
+}
+
+body.dark-mode {
+    --main-bg-color: black;
+    --main-txt-color: white;
+}

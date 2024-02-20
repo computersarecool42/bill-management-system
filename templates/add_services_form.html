@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block content %}
+<form method="post" action="{{url_for('logic_routes.add_services')}}">
+    <label for="meal_name">Provide service name:</label><br>
+    <input type="text" id="meal_name" name="meal_name" required><br>
+    <label for="guest_number">Provide guest number:</label><br>
+    <input type="number" id="guest_number" name="guest_number" required><br>
+    <label for="meal_price">Provide service price:</label><br>
+    <input type="number" id="meal_price" name="meal_price" step="0.01" required>
+    <button type="submit">Add!</button>
+    <br>
+    <a href="{{url_for('form_routes.dashboard_form')}}"><button type="button">Return</button></a>
+</form>
+{% endblock %}

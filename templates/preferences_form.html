@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Preferences</title>
+    <style>
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+    </style>
+    <link id="theme-css" rel="stylesheet" href="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        function saveTheme(event) {
+            if(event.target.value === 'dark') {
+                document.getElementById('theme-css').href = '/styles.css'
+            } else {
+                document.getElementById('theme-css').href = ''
+            }
+        }
+    </script>
+</head>
+<body>
+<div class="center">
+    <h1>Preferences</h1>
+
+    <form method="POST" action="{{url_for('logic_routes.theme')}}">
+        <label for="theme">Theme:</label>
+        <select name="theme" id="theme" onchange="saveTheme(event)">
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+        </select>
+        <input type="submit" value="Set Theme">
+    </form>
+</div>
+</body>
+</html>
