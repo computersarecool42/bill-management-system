@@ -1,3 +1,146 @@
-body {
-    background: #ff0;
+:root {
+    --primary-color: #4CAF50; /* Green for primary actions */
+    --secondary-color: #3E2B4A; /* Amber for secondary information */
 }
+
+body {
+    background: #30183f;
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo-header {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px; /* Adjust this value to increase or decrease the padding */
+    padding-bottom: 20px;
+}
+
+.logo-image {
+    max-width: 100%; /* Ensures the image is responsive */
+    height: auto; /* Maintains aspect ratio */
+    /* Add more styles if needed */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Only if you want vertical centering */
+    /* Additional styles here */
+    color: white;
+}
+
+/* Custom styles for a modern grid navigation menu */
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columns as per the design */
+    gap: 20px; /* space between the grid items */
+    padding: 0;
+    margin: 0 auto; /* center the grid */
+    max-width: 600px; /* maximum width of the grid */
+    list-style: none;
+}
+
+nav .nav-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+}
+
+nav .nav-grid:nth-child(2) {
+    margin-top: 1rem; /* Spacing between the two rows */
+}
+
+nav li {
+    background: var(--secondary-color); /* using the secondary color */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    aspect-ratio: 1 / 1; /* square items, ensuring they stay square */
+    padding: 1em;
+    border-radius: 15px; /* This will give a rounded corner to the squares */
+    text-align: center; /* Center the text horizontally */
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Icons and text within the navigation items */
+.nav-icon {
+    display: block; /* Icons are block level to push text below */
+    margin-bottom: 0.5em; /* Space between icon and text */
+    font-size: 1em; /* Larger icon size */
+}
+
+.nav-text {
+    display: block; /* Ensuring text also takes up full width beneath icon */
+    font-size: 1em; /* Adjust text size as needed */
+}
+
+/* Responsive tweaks might be necessary depending on your layout */
+@media (max-width: 768px) {
+    nav ul {
+        grid-template-columns: 1fr; /* 1 column grid for smaller screens */
+    }
+}
+
+/* Ensuring other elements maintain their original styles */
+button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+input, select, textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+}
+
+input[type="text"]::placeholder,
+input[type="number"]::placeholder {
+    color: #81697f; /* Set placeholder text color to white */
+    opacity: 1; /* Optional: Ensure the placeholder is fully opaque */
+    font-size: 0.95em;
+}
+
+input[type="text"],
+input[type="number"] {
+    background-color: #3B2C48; /* Set the background color of input fields */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #865dbe;
+    border-radius: 5px;
+    width: calc(100% - 20px); /* Adjusting width to match input fields, considering padding and border */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+button {
+    background-color: #FADF9B;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: calc(100% - 20px); /* Make the button the same width as input fields */
+    box-sizing: border-box;
+    margin: 10px 0;
+}
+

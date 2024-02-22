@@ -1,4 +1,2 @@
-Date: 2024-02-20
-Product: Pierogi, Price: 100.0
-Product: Barszcz, Price: 20.0
-Product: Barszcz, Price: 20.0
+Date: 2024-02-22
+Product: Pierogi, Price: 10.0

@@ -2,10 +2,10 @@
 {% block content %}
 {{ message }}
 <form method="post" action="{{url_for('logic_routes.add_meal')}}">
-    <label for="meal_name">Provide meal name:</label><br>
-    <input type="text" id="meal_name" name="meal_name" required><br>
-    <label for="meal_price">Provide meal price:</label><br>
-    <input type="number" id="meal_price" name="meal_price" step="0.01" required>
-    <button type="submit">Add!</button>
+    <input type="text" id="meal_name" name="meal_name" placeholder="Meal..." required><br>
+    <input type="number" id="meal_price" name="meal_price" placeholder="Price..." step="0.01" required><br>
+    <button type="submit">
+        <i class="fa fa-plus" style="color: black;"></i>
+    </button>
 </form>
 {% endblock %}

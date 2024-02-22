@@ -14,13 +14,14 @@ def login_required(f):
         if 'auth' not in session:
             return redirect(url_for('form_routes.login_form'))
         return f(*args, **kwargs)
+
     return decorated_function
 
 
 @logic_routes.route("/")
 def index():
     if 'auth':
-        return render_template('dashboard_form.html')
+        return render_template('layout.html')
     else:
         return redirect(url_for('form_routes.login_form'))
 
@@ -91,7 +92,8 @@ def check():
     discounted_amount = bill.check_discount(amount, discount_percentage)
 
     # You can then pass the discounted_amount back to a template, redirect, or handle as needed.
-    return render_template('default_template.html', message=f"The overall sum with discount would be: { discounted_amount }")
+    return render_template('default_template.html',
+                           message=f"The overall sum with discount would be: {discounted_amount}")
 
 
 @logic_routes.route("/apply_discount", methods=['POST'])
@@ -101,7 +103,8 @@ def apply_discount():
     discounted_amount = bill.calculate_with_discount(discount_percentage)
 
     # You can then pass the discounted_amount back to a template, redirect, or handle as needed.
-    return render_template('default_template.html', message=f"The overall sum with applied discount: { discounted_amount }")
+    return render_template('default_template.html',
+                           message=f"The overall sum with applied discount: {discounted_amount}")
 
 
 @logic_routes.route('/theme', methods=['POST'])
@@ -117,7 +120,7 @@ def theme():
 def sum_order():
     # return render_template("404.html", message="Page not found!"), 404
     bill = get_bill()
-    return render_template('default_template.html', message=f"The overall sum is: { bill.calculate() }")
+    return render_template('default_template.html', message=f"The overall sum is: {bill.calculate()}")
 
 
 @logic_routes.route("/save/<filename>")
@@ -138,6 +141,7 @@ def send_message():
     with open(filename, "w") as file:
         file.writelines(f"Name: {user_name}, Message: {user_text}")
     return render_template("default_template.html", message="Your message was saved!")
+
 
 def get_bill():
     bill = Bill()

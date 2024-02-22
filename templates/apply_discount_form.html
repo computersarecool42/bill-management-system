@@ -5,8 +5,8 @@ The overall sum: {{ calculation_result }}
 <form method="POST" action="{{url_for('logic_routes.apply_discount')}}">
     <label for="discount">Discount:</label>
     <input type="number" id="discount" name="discount" required>
-    <button type="submit">Apply Discount</button>
-    <br>
-    <a href="{{url_for('form_routes.dashboard_form')}}"><button type="button">Return</button></a>
+    <button type="submit">
+        <i class="fa fa-plus" style="color: black;"></i>
+    </button>
 </form>
 {% endblock %}
