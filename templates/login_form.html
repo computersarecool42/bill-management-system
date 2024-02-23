@@ -6,9 +6,8 @@
     <title>Login</title>
     <style>
         body {
-            background-image: url("{{ url_for('static', filename='reveillon_background.jpg') }}");
-            background-size: cover;
-            font-family: Arial, sans-serif;
+            background: #30183f;
+            font-family: 'Roboto', sans-serif;
         }
         .login-container {
             max-width: 300px;
@@ -16,22 +15,32 @@
             margin-top: 100px;
             padding: 0 20px;
         }
-        input[type=text], input[type=password] {
-            width: 100%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            display: inline-block;
-            border: 1px solid #ccc;
-            box-sizing: border-box;
+        .logo-header {
+            display: flex;
+            justify-content: center;
+            padding-top: 20px; /* Adjust this value to increase or decrease the padding */
+            padding-bottom: 1px;
+        }
+        input[type="text"],
+        input[type="password"] {
+            background-color: #3B2C48; /* Set the background color of input fields */
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #865dbe;
+            border-radius: 5px;
+            width: calc(100% - 20px); /* Adjusting width to match input fields, considering padding and border */
+            box-sizing: border-box; /* Include padding and border in width calculation */
         }
         button {
-            background-color: #4caf50;
-            color: white;
-            padding: 14px 20px;
-            margin: 8px 0;
+            background-color: #FADF9B;
+            color: black;
+            padding: 10px 20px;
             border: none;
+            border-radius: 5px;
             cursor: pointer;
-            width: 100%;
+            width: calc(100% - 20px); /* Make the button the same width as input fields */
+            box-sizing: border-box;
+            margin: 10px 0;
         }
         button:hover {
             opacity: 0.8;
@@ -45,8 +54,11 @@
     </style>
 </head>
 <body>
+<header class="logo-header">
+    <a href="{{url_for('logic_routes.index')}}"><img src="{{url_for('static', filename='logo.png')}}" alt="Bill Management System"></a>
+</header>
     <div class="login-container">
-        <h1>
+        <h2>
             {% with messages = get_flashed_messages(with_categories=true) %}
             {% if messages %}
             {% for category, message in messages %}
@@ -56,12 +68,9 @@
             {% endfor %}
             {% endif %}
             {% endwith %}
-        </h1>
+        </h2>
         <form method="post" action="{{url_for('logic_routes.login_check')}}">
-        <label for="username"><b>Username</b></label>
         <input type="text" placeholder="Enter Username" id="username" name="username" required>
-
-        <label for="password"><b>Password</b></label>
         <input type="password" placeholder="Enter Password" id="password" name="password" required>
 
         <button type="submit">Login</button>
