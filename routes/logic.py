@@ -1,16 +1,20 @@
 # In this file are all the routes related to logic processing
+import logging
+import pandas as pd
 from datetime import datetime
 from functools import wraps
 from bill import Bill
 from user import User
-from flask import Blueprint, request, session, redirect, render_template, url_for, flash, abort
+from flask import Blueprint, request, session, redirect, render_template, url_for, flash
 
 logic_routes = Blueprint('logic_routes', __name__)
+# logging.basicConfig(filename='app.log', level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 
 
 def login_required(f):
     @wraps(f)
     def decorated_function(*args, **kwargs):
+        print(session)  # Debug: Print session content
         if 'auth' not in session:
             return redirect(url_for('form_routes.login_form'))
         return f(*args, **kwargs)
@@ -19,11 +23,9 @@ def login_required(f):
 
 
 @logic_routes.route("/")
+@login_required
 def index():
-    if 'auth':
-        return render_template('layout.html')
-    else:
-        return redirect(url_for('form_routes.login_form'))
+    return render_template('layout.html')
 
 
 @logic_routes.route("/login_check", methods=['POST'])
@@ -35,17 +37,22 @@ def login_check():
 
     if user.login(username, password):
         print("Correct Password!")
+        # logging.info(f"User {username} logged in successfully.")
         session['auth'] = user.auth
         print(session['auth'])
+    # logging.debug(f"Session auth set: {session['auth']}")
         return redirect(url_for('form_routes.dashboard_form'))
     else:
         print("Incorrect Password!")
+        # logging.warning(f"Failed login attempt for user: {username}")
         flash("Incorrect credentials!", 'error')  # pass the error message through Flask's flash message system
         return redirect(url_for('form_routes.login_form'))
 
 
 @logic_routes.route("/logout")
 def logout():
+    # logging.info(f"User logout in successfully.")
+    print("Cookies Removed! User Logout!")
     session.clear()
     return redirect(url_for('form_routes.login_form'))
 
@@ -109,7 +116,6 @@ def apply_discount():
 
 @logic_routes.route('/theme', methods=['POST'])
 def theme():
-    user = User()
     session['theme'] = request.form.get('theme')
     print(session['theme'])
     return redirect(request.referrer)
@@ -131,6 +137,29 @@ def save(filename):
         return render_template("default_template.html", message="Success!")
     except:
         return render_template("default_template.html", message="Unable to save to file!")
+
+
+@logic_routes.route("/cancel_order")
+def cancel_order():
+    bill = get_bill()
+
+    bill.entries = []
+    session['entries'] = bill.entries
+    print(bill.entries)
+
+    return render_template("default_template.html", message="Order Canceled!")
+
+
+@logic_routes.route("/display_csv")
+def display_csv():
+    try:
+        csv_file = 'history.csv'
+        df = pd.read_csv(csv_file)
+        html_table = df.to_html(classes='table table-bordered table-striped', escape=False)
+        return render_template("default_template.html", csv=html_table)
+    except Exception as e:
+        print(f"Error opening CSV file: {e}")
+        return render_template("default_template.html", message="Unable open CSV history file!")
 
 
 @logic_routes.route("/contact", methods=['POST'])

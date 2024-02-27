@@ -1,0 +1,192 @@
+2024-02-27 10:17:29,627 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-02-27 10:17:29,628 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-02-27 10:17:29,628 - werkzeug - INFO -  * Restarting with stat
+2024-02-27 10:17:29,746 - werkzeug - WARNING -  * Debugger is active!
+2024-02-27 10:17:29,753 - werkzeug - INFO -  * Debugger PIN: 110-267-753
+2024-02-27 10:17:38,839 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-02-27 10:17:38,839 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-02-27 10:17:38,839 - werkzeug - INFO -  * Restarting with stat
+2024-02-27 10:17:38,930 - werkzeug - WARNING -  * Debugger is active!
+2024-02-27 10:17:38,935 - werkzeug - INFO -  * Debugger PIN: 110-267-753
+2024-02-27 10:18:12,578 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-02-27 10:18:12,578 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-02-27 10:18:12,579 - werkzeug - INFO -  * Restarting with stat
+2024-02-27 10:18:12,674 - werkzeug - WARNING -  * Debugger is active!
+2024-02-27 10:18:12,682 - werkzeug - INFO -  * Debugger PIN: 110-267-753
+2024-02-27 10:18:16,006 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-02-27 10:18:16,006 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-02-27 10:18:16,007 - werkzeug - INFO -  * Restarting with stat
+2024-02-27 10:18:16,108 - werkzeug - WARNING -  * Debugger is active!
+2024-02-27 10:18:16,113 - werkzeug - INFO -  * Debugger PIN: 110-267-753
+2024-02-27 10:18:36,899 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-02-27 10:18:36,901 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-02-27 10:18:36,902 - werkzeug - INFO -  * Restarting with stat
+2024-02-27 10:18:36,995 - werkzeug - WARNING -  * Debugger is active!
+2024-02-27 10:18:37,004 - werkzeug - INFO -  * Debugger PIN: 110-267-753
+2024-02-27 10:23:57,690 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-02-27 10:23:57,690 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-02-27 10:23:57,691 - werkzeug - INFO -  * Restarting with stat
+2024-02-27 10:23:57,826 - werkzeug - WARNING -  * Debugger is active!
+2024-02-27 10:23:57,839 - werkzeug - INFO -  * Debugger PIN: 110-267-753
+2024-02-27 10:24:31,849 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-02-27 10:24:31,849 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-02-27 10:24:31,849 - werkzeug - INFO -  * Restarting with stat
+2024-02-27 10:24:31,944 - werkzeug - WARNING -  * Debugger is active!
+2024-02-27 10:24:31,951 - werkzeug - INFO -  * Debugger PIN: 110-267-753
+2024-02-27 10:24:58,134 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:24:58] "GET /dashboard_form HTTP/1.1" 200 -
+2024-02-27 10:24:58,236 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:24:58] "GET /static/logo.png HTTP/1.1" 200 -
+2024-02-27 10:24:58,236 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:24:58] "GET /static/custom.css HTTP/1.1" 200 -
+2024-02-27 10:24:58,728 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:24:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-02-27 10:24:59,921 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:24:59] "GET /dashboard_form HTTP/1.1" 200 -
+2024-02-27 10:24:59,981 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:24:59] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+2024-02-27 10:24:59,982 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:24:59] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2024-02-27 10:25:00,890 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:25:00] "GET /dashboard_form HTTP/1.1" 200 -
+2024-02-27 10:25:00,916 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:25:00] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+2024-02-27 10:25:00,916 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:25:00] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2024-02-27 10:25:03,232 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:25:03] "GET /add_meal_form HTTP/1.1" 200 -
+2024-02-27 10:25:03,287 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:25:03] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+2024-02-27 10:25:03,288 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:25:03] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2024-02-27 10:25:04,268 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:25:04] "GET /dashboard_form HTTP/1.1" 200 -
+2024-02-27 10:25:04,321 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:25:04] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+2024-02-27 10:25:04,322 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:25:04] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2024-02-27 10:25:16,394 - root - INFO - User logout in successfully.
+2024-02-27 10:25:16,398 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:25:16] "[32mGET /logout HTTP/1.1[0m" 302 -
+2024-02-27 10:25:16,414 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:25:16] "GET /login_form HTTP/1.1" 200 -
+2024-02-27 10:25:16,483 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:25:16] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2024-02-27 10:25:23,019 - root - WARNING - Failed login attempt for user: dsddfs
+2024-02-27 10:25:23,028 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:25:23] "[32mPOST /login_check HTTP/1.1[0m" 302 -
+2024-02-27 10:25:23,048 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:25:23] "GET /login_form HTTP/1.1" 200 -
+2024-02-27 10:25:23,102 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:25:23] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2024-02-27 10:25:47,553 - root - WARNING - Failed login attempt for user: dsfdsf
+2024-02-27 10:25:47,555 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:25:47] "[32mPOST /login_check HTTP/1.1[0m" 302 -
+2024-02-27 10:25:47,564 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:25:47] "GET /login_form HTTP/1.1" 200 -
+2024-02-27 10:25:47,612 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:25:47] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2024-02-27 10:26:06,981 - werkzeug - INFO -  * Detected change in '/Users/kiki/IdeaProjects/Eduweb Sciezka Python/Poziom 2/bill-management-system/routes/logic.py', reloading
+2024-02-27 10:26:07,030 - werkzeug - INFO -  * Restarting with stat
+2024-02-27 10:26:07,259 - werkzeug - WARNING -  * Debugger is active!
+2024-02-27 10:26:07,270 - werkzeug - INFO -  * Debugger PIN: 110-267-753
+2024-02-27 10:26:09,197 - root - WARNING - Failed login attempt for user: dfsfds
+2024-02-27 10:26:09,199 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:26:09] "[32mPOST /login_check HTTP/1.1[0m" 302 -
+2024-02-27 10:26:09,217 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:26:09] "GET /login_form HTTP/1.1" 200 -
+2024-02-27 10:26:09,288 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:26:09] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2024-02-27 10:27:23,045 - werkzeug - INFO -  * Detected change in '/Users/kiki/IdeaProjects/Eduweb Sciezka Python/Poziom 2/bill-management-system/routes/logic.py', reloading
+2024-02-27 10:27:23,089 - werkzeug - INFO -  * Restarting with stat
+2024-02-27 10:27:23,253 - werkzeug - WARNING -  * Debugger is active!
+2024-02-27 10:27:23,258 - werkzeug - INFO -  * Debugger PIN: 110-267-753
+2024-02-27 10:37:54,851 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-02-27 10:37:54,851 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-02-27 10:37:54,852 - werkzeug - INFO -  * Restarting with stat
+2024-02-27 10:37:54,969 - werkzeug - WARNING -  * Debugger is active!
+2024-02-27 10:37:54,982 - werkzeug - INFO -  * Debugger PIN: 110-267-753
+2024-02-27 10:38:10,289 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:38:10] "GET / HTTP/1.1" 200 -
+2024-02-27 10:38:10,326 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:38:10] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2024-02-27 10:38:10,327 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:38:10] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+2024-02-27 10:38:13,340 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:38:13] "GET /dashboard_form HTTP/1.1" 200 -
+2024-02-27 10:38:13,396 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:38:13] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+2024-02-27 10:38:13,397 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:38:13] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2024-02-27 10:38:14,838 - root - INFO - User logout in successfully.
+2024-02-27 10:38:14,839 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:38:14] "[32mGET /logout HTTP/1.1[0m" 302 -
+2024-02-27 10:38:14,853 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:38:14] "GET /login_form HTTP/1.1" 200 -
+2024-02-27 10:38:14,912 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:38:14] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2024-02-27 10:38:24,746 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:38:24] "[33mGET /dashboard HTTP/1.1[0m" 404 -
+2024-02-27 10:38:27,931 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:38:27] "[33mGET /dashboard HTTP/1.1[0m" 404 -
+2024-02-27 10:38:36,178 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:38:36] "GET /add_meal_form HTTP/1.1" 200 -
+2024-02-27 10:38:36,240 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:38:36] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+2024-02-27 10:38:36,241 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:38:36] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2024-02-27 10:39:53,616 - root - INFO - User logout in successfully.
+2024-02-27 10:39:53,617 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:39:53] "[32mGET /logout HTTP/1.1[0m" 302 -
+2024-02-27 10:39:53,630 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:39:53] "GET /login_form HTTP/1.1" 200 -
+2024-02-27 10:39:53,728 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:39:53] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2024-02-27 10:40:11,553 - werkzeug - INFO -  * Detected change in '/Users/kiki/IdeaProjects/Eduweb Sciezka Python/Poziom 2/bill-management-system/routes/logic.py', reloading
+2024-02-27 10:40:11,592 - werkzeug - INFO -  * Restarting with stat
+2024-02-27 10:40:11,731 - werkzeug - WARNING -  * Debugger is active!
+2024-02-27 10:40:11,737 - werkzeug - INFO -  * Debugger PIN: 110-267-753
+2024-02-27 10:40:14,919 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:40:14] "GET /add_meal_form HTTP/1.1" 200 -
+2024-02-27 10:40:14,992 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:40:14] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+2024-02-27 10:40:14,992 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:40:14] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2024-02-27 10:40:16,099 - root - INFO - User logout in successfully.
+2024-02-27 10:40:16,099 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:40:16] "[32mGET /logout HTTP/1.1[0m" 302 -
+2024-02-27 10:40:16,112 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:40:16] "GET /login_form HTTP/1.1" 200 -
+2024-02-27 10:40:16,191 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:40:16] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2024-02-27 10:40:31,007 - werkzeug - INFO -  * Detected change in '/Users/kiki/IdeaProjects/Eduweb Sciezka Python/Poziom 2/bill-management-system/routes/logic.py', reloading
+2024-02-27 10:40:31,081 - werkzeug - INFO -  * Restarting with stat
+2024-02-27 10:40:31,258 - werkzeug - WARNING -  * Debugger is active!
+2024-02-27 10:40:31,262 - werkzeug - INFO -  * Debugger PIN: 110-267-753
+2024-02-27 10:40:31,565 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:40:31] "GET /login_form HTTP/1.1" 200 -
+2024-02-27 10:40:31,657 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:40:31] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2024-02-27 10:40:32,422 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:40:32] "GET / HTTP/1.1" 200 -
+2024-02-27 10:40:32,476 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:40:32] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+2024-02-27 10:40:32,477 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:40:32] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2024-02-27 10:40:33,876 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:40:33] "GET / HTTP/1.1" 200 -
+2024-02-27 10:40:33,916 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:40:33] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2024-02-27 10:40:33,916 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:40:33] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+2024-02-27 10:40:35,444 - root - INFO - User logout in successfully.
+2024-02-27 10:40:35,471 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:40:35] "[35m[1mGET /logout HTTP/1.1[0m" 500 -
+2024-02-27 10:40:35,545 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:40:35] "GET /logout?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-02-27 10:40:35,545 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:40:35] "GET /logout?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-02-27 10:40:35,589 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:40:35] "GET /logout?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-02-27 10:40:35,677 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 10:40:35] "[36mGET /logout?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-02-27 10:40:47,489 - werkzeug - INFO -  * Detected change in '/Users/kiki/IdeaProjects/Eduweb Sciezka Python/Poziom 2/bill-management-system/routes/logic.py', reloading
+2024-02-27 10:40:47,512 - werkzeug - INFO -  * Restarting with stat
+2024-02-27 10:40:47,650 - werkzeug - WARNING -  * Debugger is active!
+2024-02-27 10:40:47,655 - werkzeug - INFO -  * Debugger PIN: 110-267-753
+2024-02-27 11:10:06,340 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 11:10:06] "GET / HTTP/1.1" 200 -
+2024-02-27 11:10:06,470 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 11:10:06] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+2024-02-27 11:10:06,471 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 11:10:06] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2024-02-27 11:10:18,511 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 11:10:18] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+2024-02-27 11:10:34,515 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 11:10:34] "GET /add_meal_form HTTP/1.1" 200 -
+2024-02-27 11:10:34,602 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 11:10:34] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+2024-02-27 11:10:34,602 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 11:10:34] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2024-02-27 11:10:37,189 - root - INFO - User logout in successfully.
+2024-02-27 11:10:37,189 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 11:10:37] "[32mGET /logout HTTP/1.1[0m" 302 -
+2024-02-27 11:10:37,203 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 11:10:37] "GET /login_form HTTP/1.1" 200 -
+2024-02-27 11:10:37,258 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 11:10:37] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2024-02-27 11:10:43,308 - root - WARNING - Failed login attempt for user: fdsfs
+2024-02-27 11:10:43,310 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 11:10:43] "[32mPOST /login_check HTTP/1.1[0m" 302 -
+2024-02-27 11:10:43,320 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 11:10:43] "GET /login_form HTTP/1.1" 200 -
+2024-02-27 11:10:43,364 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 11:10:43] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2024-02-27 11:10:45,857 - root - WARNING - Failed login attempt for user: fff
+2024-02-27 11:10:45,858 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 11:10:45] "[32mPOST /login_check HTTP/1.1[0m" 302 -
+2024-02-27 11:10:45,868 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 11:10:45] "GET /login_form HTTP/1.1" 200 -
+2024-02-27 11:10:45,906 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 11:10:45] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2024-02-27 11:10:55,914 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 11:10:55] "GET /add_meal_form HTTP/1.1" 200 -
+2024-02-27 11:10:55,990 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 11:10:55] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+2024-02-27 11:10:55,990 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 11:10:55] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2024-02-27 11:15:43,780 - root - INFO - User logout in successfully.
+2024-02-27 11:15:43,786 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 11:15:43] "[32mGET /logout HTTP/1.1[0m" 302 -
+2024-02-27 11:15:43,805 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 11:15:43] "GET /login_form HTTP/1.1" 200 -
+2024-02-27 11:15:43,934 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 11:15:43] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2024-02-27 11:15:47,440 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 11:15:47] "GET /login_form HTTP/1.1" 200 -
+2024-02-27 11:15:47,491 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 11:15:47] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2024-02-27 11:15:50,360 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 11:15:50] "GET /login_form HTTP/1.1" 200 -
+2024-02-27 11:15:50,402 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 11:15:50] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2024-02-27 11:15:56,823 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 11:15:56] "GET /add_meal_form HTTP/1.1" 200 -
+2024-02-27 11:15:56,882 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 11:15:56] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2024-02-27 11:15:56,883 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 11:15:56] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+2024-02-27 11:16:45,286 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-02-27 11:16:45,287 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-02-27 11:16:45,287 - werkzeug - INFO -  * Restarting with stat
+2024-02-27 11:16:45,431 - werkzeug - WARNING -  * Debugger is active!
+2024-02-27 11:16:45,437 - werkzeug - INFO -  * Debugger PIN: 110-267-753
+2024-02-27 11:16:47,974 - root - INFO - User logout in successfully.
+2024-02-27 11:16:47,977 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 11:16:47] "[32mGET /logout HTTP/1.1[0m" 302 -
+2024-02-27 11:16:47,995 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 11:16:47] "GET /login_form HTTP/1.1" 200 -
+2024-02-27 11:16:48,102 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 11:16:48] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2024-02-27 11:16:53,041 - root - WARNING - Failed login attempt for user: dsads
+2024-02-27 11:16:53,043 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 11:16:53] "[32mPOST /login_check HTTP/1.1[0m" 302 -
+2024-02-27 11:16:53,051 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 11:16:53] "GET /login_form HTTP/1.1" 200 -
+2024-02-27 11:16:53,100 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 11:16:53] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2024-02-27 11:16:58,956 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 11:16:58] "GET /add_meal_form HTTP/1.1" 200 -
+2024-02-27 11:16:59,028 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 11:16:59] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2024-02-27 11:16:59,029 - werkzeug - INFO - 127.0.0.1 - - [27/Feb/2024 11:16:59] "[36mGET /static/custom.css HTTP/1.1[0m" 304 -
+2024-02-27 11:19:13,130 - werkzeug - INFO -  * Detected change in '/Users/kiki/IdeaProjects/Eduweb Sciezka Python/Poziom 2/bill-management-system/routes/logic.py', reloading
+2024-02-27 11:19:13,160 - werkzeug - INFO -  * Restarting with stat

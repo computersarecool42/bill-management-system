@@ -73,11 +73,11 @@ class Bill:
     # Write
     @entries.setter
     def entries(self, entries):
-        if not entries:
-            print("Entries can't be empty")
-            return
-        else:
-            self.__entries = [Meal.fromdict(entry) for entry in entries]
+        # if not entries:
+        #    print("Entries can't be empty")
+        #    return
+        # else:
+        self.__entries = [Meal.fromdict(entry) for entry in entries]
 
     # Write
     @property

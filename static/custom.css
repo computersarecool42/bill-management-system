@@ -128,8 +128,8 @@ input[type="number"] {
     margin: 10px 0;
     border: 1px solid #865dbe;
     border-radius: 5px;
-    width: calc(100% - 20px); /* Adjusting width to match input fields, considering padding and border */
-    box-sizing: border-box; /* Include padding and border in width calculation */
+    /* width: calc(100% - 20px);  Adjusting width to match input fields, considering padding and border */
+    /*box-sizing: border-box; Include padding and border in width calculation */
 }
 
 button {
@@ -139,7 +139,7 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    width: calc(100% - 20px); /* Make the button the same width as input fields */
+    /* width: calc(100% - 20px);  Make the button the same width as input fields */
     box-sizing: border-box;
     margin: 10px 0;
 }

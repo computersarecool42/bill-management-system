@@ -81,8 +81,18 @@
                 <span class="nav-text">Logout</span>
             </a>
         </li>
-        <!-- Placeholder for the fifth item if necessary -->
-        <li class="nav-item"></li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{url_for('logic_routes.cancel_order')}}">
+                <i class="fas fa-times nav-icon"></i>
+                <span class="nav-text">Cancel Order</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{url_for('logic_routes.display_csv')}}">
+                <i class="fas fa-file-csv nav-icon"></i>
+                <span class="nav-text">Display CSV</span>
+            </a>
+        </li>
     </ul>
 </nav>
 </body>
