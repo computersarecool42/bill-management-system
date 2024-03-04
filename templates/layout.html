@@ -12,9 +12,6 @@
 <header class="logo-header">
     <a href="{{url_for('logic_routes.index')}}"><img src="{{url_for('static', filename='logo.png')}}" alt="Bill Management System"></a>
 </header>
-<div class="container">
-    {% block content %} {% endblock content %}
-</div>
 <nav>
     <ul class="nav-grid">
         <!-- First row of navigation items -->
@@ -70,9 +67,9 @@
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="{{url_for('logic_routes.predictions')}}">
                 <i class="fas fa-cogs nav-icon"></i>
-                <span class="nav-text">Make Prediction</span>
+                <span class="nav-text">Predictions</span>
             </a>
         </li>
         <li class="nav-item">
@@ -94,6 +91,9 @@
             </a>
         </li>
     </ul>
-</nav>
+</nav><br><br>
+<div class="container">
+    {% block content %} {% endblock content %}
+</div>
 </body>
 </html>

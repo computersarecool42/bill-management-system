@@ -172,6 +172,16 @@ def send_message():
     return render_template("default_template.html", message="Your message was saved!")
 
 
+@logic_routes.route("/predictions")
+def sales_forecasting():
+    sales_file_path = 'history.csv'
+    sales_data = pd.read_csv(sales_file_path)
+
+    sales_data = sales_data.dropna(axis=0)
+
+
+
+
 def get_bill():
     bill = Bill()
     # Check if there are already any products in session
