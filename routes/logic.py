@@ -97,7 +97,6 @@ def check():
     bill = get_bill()  # Retrieve or recalculate the bill amount.
     amount = bill.calculate()
     discounted_amount = bill.check_discount(amount, discount_percentage)
-
     # You can then pass the discounted_amount back to a template, redirect, or handle as needed.
     return render_template('default_template.html',
                            message=f"The overall sum with discount would be: {discounted_amount}")
@@ -108,7 +107,6 @@ def apply_discount():
     discount_percentage = float(request.form['discount'])
     bill = get_bill()  # Retrieve or recalculate the bill amount.
     discounted_amount = bill.calculate_with_discount(discount_percentage)
-
     # You can then pass the discounted_amount back to a template, redirect, or handle as needed.
     return render_template('default_template.html',
                            message=f"The overall sum with applied discount: {discounted_amount}")
@@ -126,6 +124,7 @@ def theme():
 def sum_order():
     # return render_template("404.html", message="Page not found!"), 404
     bill = get_bill()
+    my_list = bill.list_order()
     return render_template('default_template.html', message=f"The overall sum is: {bill.calculate()}")
 
 
@@ -144,6 +143,7 @@ def cancel_order():
     bill = get_bill()
 
     bill.entries = []
+    bill.discount = None
     session['entries'] = bill.entries
     print(bill.entries)
 
@@ -170,16 +170,6 @@ def send_message():
     with open(filename, "w") as file:
         file.writelines(f"Name: {user_name}, Message: {user_text}")
     return render_template("default_template.html", message="Your message was saved!")
-
-
-@logic_routes.route("/predictions")
-def sales_forecasting():
-    sales_file_path = 'history.csv'
-    sales_data = pd.read_csv(sales_file_path)
-
-    sales_data = sales_data.dropna(axis=0)
-
-
 
 
 def get_bill():

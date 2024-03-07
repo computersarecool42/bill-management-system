@@ -2,6 +2,7 @@ import datetime
 from meal import Meal
 from drink import Drink
 from service import Service
+from flask import session
 
 
 class Bill:
@@ -26,20 +27,35 @@ class Bill:
         # Using __ make it private, so only methods inside this class can have access to it
         self.__entries = []
         self.__log = []
+        self.__discount = session.get('discount', None)
 
     @staticmethod
     def check_discount(overall_sum, discount):
         return overall_sum - overall_sum * discount / 100
 
     def calculate_with_discount(self, discount):
-        current_sum = self.calculate()
-        return current_sum - current_sum * discount / 100
+        if 1 <= discount <= 100:  # Ensure discount is a valid percentage
+            self.discount = discount
+            current_sum = self.calculate()
+            return current_sum
+        else:
+            return "\nInvalid discount value. Discount should be between 1 and 100."
 
     def calculate(self):
         cost = 0.0
         for meal in self.__entries:
             cost += meal.price
-        return cost
+        if self.discount is not None:
+            cost_with_discount = cost - cost * float(self.discount) / 100
+            return cost_with_discount
+        else:
+            return cost
+
+    def list_order(self):
+        my_list = []
+        for entry in self.__entries:
+            my_list.append(entry.generate_description())
+        return my_list
 
     def print_to_file(self, filename):
         date = datetime.date.today()
@@ -92,3 +108,12 @@ class Bill:
             return
         else:
             self.__log.append(log_entry)
+
+    @property
+    def discount(self):
+        return self.__discount
+
+    @discount.setter
+    def discount(self, value):
+        self.__discount = value
+        session['discount'] = value
